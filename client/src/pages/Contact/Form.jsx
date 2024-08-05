@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "./form.scss";
+// import "./form.scss";
 import toast, { Toaster } from 'react-hot-toast';
 
 const Form = () => {
@@ -39,9 +39,8 @@ const Form = () => {
             toast.error("Envoi échoué");
             setError(true);
             setSent(true);
-        } finally {
-            setLoading(false);
         }
+            setLoading(false);
     };
 
     return (
